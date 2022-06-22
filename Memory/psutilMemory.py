@@ -25,4 +25,3 @@ def print_all_info_memory():
 
     return allinfo
 
-print(print_all_info_memory())
