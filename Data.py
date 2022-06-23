@@ -3,9 +3,10 @@ from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 import CPU.psutilCPU as CPU
 
-token = os.environ.get("INFLUXDB_TOKEN")
-org = "loic.gouriou@edu.itescia.fr"
-url = "http://192.168.1.40:8086"
+token = "4FDnyvzUa78E_E6kDaluT5wkwf5ijaiWgs1nrxjvbva8tuN1oeAaYVUImYeoXRRsjUBCZNOqS4PqND15pp73NQ=="
+
+org = "belli.kieran@gmail.com"
+url = "https://us-east-1-1.aws.cloud2.influxdata.com"
 
 client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
 
@@ -21,5 +22,5 @@ def write_db(donne):
             .tag("type", "value")
             .field(donne[0], donne[1])
         )
-        write_api.write(bucket=bucket, url='http://192.168.1.40:8086', record=point)
+        write_api.write(bucket="Logs", org="belli.kieran@gmail.com", record=point)
         time.sleep(1)  # separate points by 1 second
