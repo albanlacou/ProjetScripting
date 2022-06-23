@@ -1,34 +1,26 @@
 import psutil
 
 
-def print_sensor_temperature():
-    """
-    :return: sensor temperature
-    """
-    return ["sensor temperature",psutil.sensors_temperatures()]
+#def print_sensor_temperature():
 
-def print_sensor_fans():
-    """
-    :return: sensor fans
-    """
-    return ["sensor fans",psutil.sensors_fans()]
+ #   return ["sensor temperature",psutil.sensors_temperatures()]
 
-def print_sensor_battery():
-    """
-    :return: sensor battery
-    """
-    return ["sensor battery",psutil.sensors_battery()]
+#def print_sensor_fans():
 
-def print_all_info():
-    """
-    :return: print all info
-    """
+  #  return ["sensor fans",psutil.sensors_fans()]
 
-    allinfos = []
+#def print_sensor_battery():
+
+   # return ["sensor battery",psutil.sensors_battery()]
+
+#def print_all_info():
+
+
+  #  allinfos = []
 
     #allinfos.append(print_sensor_temperature())
     #allinfos.append(print_sensor_fans())
-    allinfos.append(print_sensor_battery())
+  #  allinfos.append(print_sensor_battery())
 
-    return allinfos
+   # return allinfos
 

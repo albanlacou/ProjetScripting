@@ -2,12 +2,9 @@ import psutil
 import logging
 
 
-def print_cpu_time():
-    """
-    print the cpu time
-    :return: cpu time
-    """
-    return ["CPU time:",psutil.cpu_times()]
+#def print_cpu_time():
+
+  #  return ["CPU time:",psutil.cpu_times()]
 
 
 def print_cpu_percent():
@@ -25,37 +22,37 @@ def print_cpu_count():
     """
     return ["CPU count",psutil.cpu_count()]
 
-def print_cpu_stat():
+#def print_cpu_stat():
     """
     print the cpu stats
     :return: cpu stats
     """
-    return ["CPU stats",psutil.cpu_stats()]
+ #   return ["CPU stats",psutil.cpu_stats()]
 
-def print_cpu_freq():
+#def print_cpu_freq():
     """
     return cpu freq
     :return: cpu freq
     """
-    return ["cpu freq",psutil.cpu_freq()]
+ #   return ["cpu freq",psutil.cpu_freq()]
 
-def print_cpu_avg():
+#def print_cpu_avg():
     """
     return cpu avg
     :return: cpu avg
     """
-    return ["cpu avg",psutil.getloadavg()]
+ #   return ["cpu avg",psutil.getloadavg()]
 
 
 def get_all_info_cpu():
     allinfo = []
 
-    allinfo.append(print_cpu_time())
+   # allinfo.append(print_cpu_time())
     allinfo.append(print_cpu_percent())
     allinfo.append(print_cpu_count())
-    allinfo.append(print_cpu_stat())
-    allinfo.append(print_cpu_freq())
-    allinfo.append(print_cpu_avg())
+   # allinfo.append(print_cpu_stat())
+   # allinfo.append(print_cpu_freq())
+   # allinfo.append(print_cpu_avg())
 
     return allinfo
 

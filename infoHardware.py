@@ -34,10 +34,10 @@ def get_all_info():
     """
     allinfos = []
     allinfos.append(cpu.get_all_info_cpu())
-    allinfos.append(disks.print_all_info_disks())
-    allinfos.append(mem.print_all_info_memory())
-    allinfos.append(net.print_all_info())
-    allinfos.append(sens.print_all_info())
+   # allinfos.append(disks.print_all_info_disks())
+   # allinfos.append(mem.print_all_info_memory())
+   # allinfos.append(net.print_all_info())
+   # allinfos.append(sens.print_all_info())
 
     return allinfos
 
