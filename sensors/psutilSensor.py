@@ -26,8 +26,9 @@ def print_all_info():
 
     allinfos = []
 
-    allinfos.append(print_sensor_temperature())
-    allinfos.append(print_sensor_fans())
+    #allinfos.append(print_sensor_temperature())
+    #allinfos.append(print_sensor_fans())
     allinfos.append(print_sensor_battery())
 
     return allinfos
+

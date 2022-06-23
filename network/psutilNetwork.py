@@ -34,7 +34,7 @@ def print_all_info():
     all_info = []
 
     all_info.append(print_io_counter())
-    all_info.append(print_io_connection())
+    #all_info.append(print_io_connection())
     all_info.append(print_net_adress())
     all_info.append(print_net_stat())
 
