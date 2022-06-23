@@ -22,4 +22,4 @@ def print_all_info_disks():
     allinfo.append(print_disks_partitions())
     allinfo.append(print_disks_counters())
 
-    return allinfo()
+    return allinfo
