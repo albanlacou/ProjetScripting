@@ -7,6 +7,7 @@ import Disks.psutilDisks as disks
 import Memory.psutilMemory as mem
 import network.psutilNetwork as net
 import sensors.psutilSensor as sens
+import Data as data
 
 global frequence
 
@@ -55,6 +56,7 @@ def write_log_in_file(interval):
         for log in logs:
             for line in log:
                 file.write(str(line)+"\n")
+                data.write_db(line)
 
 
 
