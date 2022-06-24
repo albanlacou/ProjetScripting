@@ -45,6 +45,10 @@ def print_cpu_count():
 
 
 def get_all_info_cpu():
+    """
+    return all info
+    :return: cpu avg
+    """
     allinfo = []
 
    # allinfo.append(print_cpu_time())
